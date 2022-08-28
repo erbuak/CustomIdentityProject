@@ -1,6 +1,13 @@
 ﻿@model RegisterViewModel
 @{
     ViewData["Title"] = "Register";
+
+    if(@ViewBag.SuccessMessage != null)
+    {
+        <div class="alert alert-success" role="alert">
+          @ViewBag.SuccessMessage
+        </div>       
+    }
 }
 
 <h2>User Register</h2>
